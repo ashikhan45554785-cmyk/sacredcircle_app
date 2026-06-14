@@ -1,0 +1,6 @@
+{
+  "name": "SacredCircle",
+  "description": "A premium, unified spiritual tracker matching Muslim, Christian, and Hindu traditions. Includes beautiful rituals journals, animated bead chanting orbs, and real-time synchronized family faith graphs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

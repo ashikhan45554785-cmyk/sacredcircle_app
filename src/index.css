@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --green: #1D9E75;
+    --green-light: #E1F5EE;
+    --green-dark: #0F6E56;
+    --blue: #2A72B5;
+    --blue-light: #EBF3FA;
+    --blue-dark: #1F5385;
+    --amber: #CD7B0E;
+    --amber-light: #FBF4E7;
+    --amber-dark: #8E5407;
+    --gold: #C09520;
+    --gold-light: #FBF8EE;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Beautiful elegant typography for arabic and titles */
+  .title-serif {
+    font-family: 'Cinzel', serif;
+  }
+
+  .arabic-serif {
+    font-family: 'Amiri', serif;
+  }
+}
+
+/* Fluid responsive layout and gorgeous glowing/shadow utility classes */
+.ambient-glow-gold {
+  box-shadow: 0 0 30px rgba(192, 149, 32, 0.25);
+}
+
+.ambient-glow-green {
+  box-shadow: 0 0 30px rgba(29, 158, 117, 0.25);
+}
+
+.ambient-glow-blue {
+  box-shadow: 0 0 30px rgba(42, 114, 181, 0.25);
+}
+
+.ambient-glow-amber {
+  box-shadow: 0 0 30px rgba(205, 123, 14, 0.25);
+}
+
+/* Custom scrollbars for a clean premium layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.16);
+}
+
+/* Shimmer animations and spiritual space starry backgrounds */
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+    filter: drop-shadow(0 0 10px rgba(192, 149, 32, 0.4));
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+    filter: drop-shadow(0 0 25px rgba(192, 149, 32, 0.85));
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
